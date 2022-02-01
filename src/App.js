@@ -4,7 +4,6 @@ import loadingAnimation from "./assets/animation.gif";
 import { ethers } from "ethers";
 import React, { useEffect, useState } from "react";
 import myEpicNft from "./utils/MyEpicNFT.json";
-import Button from "react-bootstrap/button";
 
 const TWITTER_HANDLE = "boredzilla";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
@@ -193,9 +192,9 @@ const App = () => {
                 rel="noreferrer"
               >{`built on @${TWITTER_HANDLE}`}</a>
               <span className="footer-text"> | </span>
-              <Button href={`${OPENSEA_LINK}`}>
+              <a href={`${OPENSEA_LINK}`} target="_blank">
                 🌊 View Collection on OpenSea
-              </Button>
+              </a>
             </p>
             <p><a href="https://lordicon.com/">Animated icons by Lordicon.com</a></p>
           </div>
